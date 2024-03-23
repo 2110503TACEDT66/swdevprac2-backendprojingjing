@@ -19,6 +19,7 @@ export default async function CoworkingspaceCatalog({coworkingspacesJson}:{cowor
             CoworkingspaceJsonReady?.data.map((CoworkingspaceItem:CoworkingspaceItem)=>(
                 <Link href={`/coworkingspace/${CoworkingspaceItem.id}`}>
                 <Card coworkingspaceName={CoworkingspaceItem.name} imgSrc={CoworkingspaceItem.picture}
+                star={CoworkingspaceItem.star}
                 />
                 </Link>
             ))
